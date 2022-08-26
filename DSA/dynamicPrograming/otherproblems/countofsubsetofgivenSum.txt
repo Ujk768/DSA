@@ -1,0 +1,41 @@
+/***********
+
+Count of subsets sum with a Given sum
+Given an array arr[] of length N and an integer X, the task is to find the number of subsets with sum equal to X.
+Example:
+
+Input: arr[] = {1, 2, 3, 3}, X = 6
+Output: 3
+All the possible subsets are {1, 2, 3},
+{1, 2, 3} and {3, 3}
+
+
+Initialization 
+
+for 0th row no subset sum is possible with 0 elements hence
+its all updated to 0 =>initialized with 0
+
+for 0th col only way to form sum 0 when given elements is by 
+forming a null set hence=> intialized with 1
+
+//from subset sum problem
+
+if(ar[i-1]<=j){
+    t[i][j]=t[i-1][j]|| t[i-1][j-arr[i-1]]
+}else{
+    t[i][j]=t[i-1][j]
+}
+
+
+// change for count of subset sum
+its int so we have to do plus to check if we can form any more subsets
+the existing element
+
+
+if(ar[i-1]<=j){
+    t[i][j]=t[i-1][j] + t[i-1][j-arr[i-1]]
+}else{
+    t[i][j]=t[i-1][j]
+}
+
+**********/

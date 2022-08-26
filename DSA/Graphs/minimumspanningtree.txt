@@ -1,0 +1,18 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+/**
+ * @brief 
+ * 
+ * when you can convert a graph into a tree such that it contains 
+ * n nodes and n-1 edges.
+ * 
+ * every node is reacheble by every other node
+ * 
+ * spanning tree with min cost of edeges is called minimum 
+ * spaning tree
+ * 
+ * 
+ * this can be found out using prims or kruskals algo
+ */
